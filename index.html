@@ -4,145 +4,65 @@
   <meta charset="UTF-8" />
   <title>Tysonn J. Smith — Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Personal portfolio of Tysonn J. Smith — creative work/ projects in game development and interactive media."
-  />
 
   <style>
-    /* --------------------
-       Base Styles
-    -------------------- */
+    /* ---------- Base ---------- */
 
     body {
       margin: 0;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #000000;
-      color: #ffffff;
+      background: #000;
+      color: #fff;
       line-height: 1.6;
     }
 
     main {
       max-width: 720px;
-      padding: 3rem 1.5rem;
       margin: 0 auto;
+      padding: 3rem 1.5rem;
     }
 
     section {
       margin-bottom: 3rem;
-      padding-top: 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.06);
     }
 
-    section:first-of-type {
-      border-top: none;
-      padding-top: 0;
-    }
-
-    /* --------------------
-       Typography
-    -------------------- */
+    /* ---------- Typography ---------- */
 
     h1 {
       font-size: 2.75rem;
       margin-bottom: 0.5rem;
-      letter-spacing: -0.02em;
       font-weight: 700;
     }
 
     h2 {
       font-size: 1.6rem;
       margin-bottom: 1rem;
-      letter-spacing: -0.01em;
       font-weight: 600;
     }
 
     h3 {
       font-size: 1.15rem;
-      margin-bottom: 0.5rem;
+      margin: 0.5rem 0;
       font-weight: 600;
     }
 
     p {
       font-size: 1.05rem;
       opacity: 0.95;
-      margin-bottom: 1rem;
       max-width: 65ch;
     }
 
-    .muted {
-      opacity: 0.7;
-      font-size: 0.95rem;
-    }
-
-    /* --------------------
-       Links
-    -------------------- */
-
-    a {
-      color: #3b82f6;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    a[target="_blank"]::after {
-      content: " ↗";
-      font-size: 0.85em;
-      opacity: 0.7;
-    }
-
-    .links a {
-      margin-right: 0.75rem;
-    }
-
-    /* --------------------
-       Lists
-    -------------------- */
-
-    ul {
-      margin: 0.75rem 0 1.25rem;
-      padding-left: 1.25rem;
-    }
-
-    li {
-      margin-bottom: 0.4rem;
-      font-size: 0.95rem;
-    }
-
-    /* --------------------
-       Projects
-    -------------------- */
+    /* ---------- Projects ---------- */
 
     .projects {
       display: grid;
-      gap: 1.25rem;
+      gap: 1.5rem;
     }
 
     .project {
+      background: #1a1a1a;
       padding: 1.25rem;
       border-radius: 0.75rem;
-      background: #1a1a1a;
-      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
-    }
-
-    .project:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
-    }
-
-    .project p {
-      font-size: 0.95rem;
-      margin-bottom: 0.75rem;
-    }
-
-    .project a {
-      display: inline-block;
-      margin-top: 0.25rem;
     }
 
     /* ---------- Forced Image Size ---------- */
@@ -157,20 +77,19 @@
       display: block;
     }
 
-    /* --------------------
-       Footer
-    -------------------- */
+    /* ---------- Links ---------- */
 
-    footer {
-      text-align: center;
-      padding: 2rem 1.5rem;
-      font-size: 0.85rem;
-      opacity: 0.6;
+    a {
+      color: #3b82f6;
+      text-decoration: none;
+      font-weight: 500;
     }
 
-    /* --------------------
-       Mobile
-    -------------------- */
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- Mobile ---------- */
 
     @media (max-width: 480px) {
       h1 {
@@ -188,60 +107,8 @@
   <main>
     <!-- HERO -->
     <section>
-      <header>
-        <h1>Tysonn J. Smith</h1>
-        <p class="muted">Games · Interactive Media · Creative Development</p>
-      </header>
-
-      <p>
-        I’m building my personal corner of the internet to share my work and my
-        journey through the creative industry.
-      </p>
-
-      <div class="links">
-        <a href="https://github.com/tysonn-j-smith" target="_blank">GitHub</a>
-        ·
-        <a href="https://fellix-js.itch.io" target="_blank">Itch.io</a>
-        ·
-        <a href="mailto:your@email.com">Email</a>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section>
-      <h2>About</h2>
-
-      <p>
-        I’m a creative interested in interactive media, games and digital
-        experiences. I’m currently studying an Associate Degree of Game
-        Development at SAE University College. My goal is to make games my bread
-        and butter while expanding into other creative mediums.
-      </p>
-
-      <h3>Study</h3>
-      <ul>
-        <li>
-          Diploma of Game Development — Completed (SAE, 2025)
-          <a
-            href="https://sae.edu.au/courses/games/diploma-of-game-development/"
-            target="_blank"
-          >View course</a>
-        </li>
-        <li>
-          Associate Degree of Game Development — Ongoing (SAE, 202?)
-          <a
-            href="https://sae.edu.au/courses/games/associate-degree-of-games-development/"
-            target="_blank"
-          >View course</a>
-        </li>
-        <li>
-          Bachelor of Game Development — Planned (SAE, 202?)
-          <a
-            href="https://sae.edu.au/courses/games/bachelor-of-games-development/"
-            target="_blank"
-          >View course</a>
-        </li>
-      </ul>
+      <h1>Tysonn J. Smith</h1>
+      <p>Game Developer · Interactive Media · Creative</p>
     </section>
 
     <!-- PROJECTS -->
@@ -249,74 +116,63 @@
       <h2>Game Projects</h2>
 
       <div class="projects">
+        <!-- Project 1 -->
         <div class="project">
-            <img
-            src="brieillantScreenshot.png"
+          <img
+            src="brie-illant-politics.png"
             alt="Brie-illant Politics gameplay screenshot"
             class="project-image"
             loading="lazy"
           />
+
           <h3>Brie-illant Politics</h3>
           <p>
-            A political satire card game focused on information manipulation to
-            achieve the ultimate goal: outlawing cheese. SAE project (2025).
+            A political satire card game about information manipulation and
+            outlawing cheese.
           </p>
-          <ul>
-            <li>Initial project conception</li>
-            <li>Original pitch to class</li>
-            <li>Project management</li>
-            <li>Gameplay systems, card and event logic</li>
-            <li>Unity Engine (C#)</li>
-          </ul>
-          <a
-            href="https://sarale09.itch.io/brielliant-politics"
-            target="_blank"
-          >View project on Itch.io</a>
+
+          <a href="https://sarale09.itch.io/brielliant-politics" target="_blank">
+            View on Itch.io
+          </a>
         </div>
 
+        <!-- Project 2 -->
         <div class="project">
-            <img
-            src="slingtopiaScreenshot.png"
+          <img
+            src="slingtopia.png"
             alt="Slingtopia gameplay screenshot"
             class="project-image"
             loading="lazy"
           />
+
           <h3>Slingtopia</h3>
           <p>
-            A 48-hour game jam project created from the theme “Stretch.”
-            SAE Game Jam (2025).
+            A 48-hour game jam project created for the theme “Stretch.”
           </p>
-          <ul>
-            <li>Explosion detection systems</li>
-            <li>Menu programming</li>
-            <li>Source control</li>
-            <li>Unity Engine (C#)</li>
-          </ul>
-          <a
-            href="https://stumblestudio.itch.io/slingtopia"
-            target="_blank"
-          >View project on Itch.io</a>
+
+          <a href="https://stumblestudio.itch.io/slingtopia" target="_blank">
+            View on Itch.io
+          </a>
         </div>
 
+        <!-- Project 3 -->
         <div class="project">
+          <img
+            src="loopy.png"
+            alt="Loopy app screenshot"
+            class="project-image"
+            loading="lazy"
+          />
+
           <h3>Loopy</h3>
           <p>
-            A musical sandbox app allowing users of any skill level to create
-            loops using genre-based samples and effects. SAE project (2025).
+            A musical sandbox app allowing anyone to create looping tracks.
           </p>
-          <ul>
-            <li>App programming</li>
-            <li>Project management</li>
-            <li>UI / UX design</li>
-          </ul>
-          <a href="#">Project link coming soon</a>
+
+          <a href="#">Link coming soon</a>
         </div>
       </div>
     </section>
   </main>
-
-  <footer>
-    © 2025 Tysonn J. Smith
-  </footer>
 </body>
 </html>
